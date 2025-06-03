@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KeedHacker - Defensive Security & Digital Forensics</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    // Custom colors for the theme
+                    colors: {
+                        'cyan-400': '#00d4ff', // Primary accent color
+                        'cyan-700': '#0099cc', // Darker shade for gradients
+                        'dark-blue-1': '#1a1a2e', // Dark background color 1
+                        'dark-blue-2': '#16213e', // Dark background color 2
+                        'dark-blue-3': '#0f3460', // Dark background color 3
+                    },
+                    // Custom font family (Inter is a good default)
+                    fontFamily: {
+                        sans: ['Inter', 'Segoe UI', 'Tahoma', 'Geneva', 'Verdana', 'sans-serif'],
+                    },
+                    // Custom text shadow utility (optional, for specific effects)
+                    textShadow: {
+                        'default': '0 0 15px rgba(0, 212, 255, 0.5)',
+                        'lg': '0 0 20px rgba(0, 212, 255, 0.3)',
+                    },
+                }
+            }
+        }
+    </script>
+    <style>
+        /* Custom styles for text shadow as Tailwind doesn't have it directly */
+        .drop-shadow-lg {
+            text-shadow: 0 0 20px rgba(0, 212, 255, 0.3);
+        }
+    </style>
+</head>
+<body class="font-sans bg-gradient-to-br from-dark-blue-1 via-dark-blue-2 to-dark-blue-3 text-white leading-relaxed">
+    <header class="bg-black bg-opacity-30 backdrop-blur-md py-5 fixed w-full top-0 z-50 border-b-2 border-cyan-400 rounded-b-lg">
+        <div class="container mx-auto px-5 flex flex-col md:flex-row justify-between items-center">
+            <div class="text-3xl font-bold text-cyan-400 drop-shadow-lg mb-4 md:mb-0">KeedHacker</div>
+            <nav class="flex flex-wrap justify-center gap-x-8">
+                <a href="#home" class="text-white no-underline px-4 py-2 rounded-md transition-all duration-300 hover:bg-cyan-400 hover:bg-opacity-20 hover:text-cyan-400">Home</a>
+                <a href="#about" class="text-white no-underline px-4 py-2 rounded-md transition-all duration-300 hover:bg-cyan-400 hover:bg-opacity-20 hover:text-cyan-400">Services</a>
+                <a href="#services" class="text-white no-underline px-4 py-2 rounded-md transition-all duration-300 hover:bg-cyan-400 hover:bg-opacity-20 hover:text-cyan-400">Services</a>
+                <a href="#skills" class="text-white no-underline px-4 py-2 rounded-md transition-all duration-300 hover:bg-cyan-400 hover:bg-opacity-20 hover:text-cyan-400">Skills</a>
+                <a href="#testimonials" class="text-white no-underline px-4 py-2 rounded-md transition-all duration-300 hover:bg-cyan-400 hover:bg-opacity-20 hover:text-cyan-400">Testimonials</a>
+                <a href="#contact" class="text-white no-underline px-4 py-2 rounded-md transition-all duration-300 hover:bg-cyan-400 hover:bg-opacity-20 hover:text-cyan-400">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="mt-24">
+        <section id="home" class="hero text-center py-20 bg-gradient-to-br from-cyan-400/10 to-white/5 rounded-2xl my-5 mx-auto max-w-6xl px-5">
+            <div class="container mx-auto">
+                <h1 class="text-5xl font-bold mb-5 text-cyan-400 drop-shadow-lg">Defensive Security Expert</h1>
+                <p class="text-xl mb-8 text-gray-300">Specialized in Digital Forensics, Threat Hunting & SOC Operations</p>
+                <a href="#contact" class="inline-block bg-gradient-to-br from-cyan-400 to-cyan-700 text-white px-8 py-4 no-underline rounded-full font-bold transition-all duration-300 shadow-lg shadow-cyan-500/30 hover:-translate-y-1 hover:shadow-xl hover:shadow-cyan-500/40">Get Security Consultation</a>
+            </div>
+        </section>
+
+        <section id="about" class="section my-16 p-10 bg-white bg-opacity-5 rounded-xl backdrop-blur-md mx-auto max-w-6xl px-5">
+            <div class="container mx-auto">
+                <h2 class="text-4xl font-bold mb-8 text-cyan-400 text-center">About KeedHacker</h2>
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center mt-8">
+                    <div class="about-text text-lg text-gray-300">
+                        <p class="mb-4">With over 10 years of experience in cybersecurity, I specialize in the defensive side of information security. My expertise spans digital forensics, incident response, threat hunting, and Security Operations Center (SOC) management.</p>
+                        <p class="mb-4">I have led security teams at Fortune 500 companies, conducted complex digital investigations, and developed threat hunting programs that have successfully identified and neutralized advanced persistent threats.</p>
+                        <p>My approach combines deep technical knowledge with strategic thinking to build robust security programs that protect organizations from evolving cyber threats.</p>
+                    </div>
+                    <div class="about-stats bg-black bg-opacity-30 p-8 rounded-xl text-center">
+                        <div class="stat-item my-5">
+                            <div class="stat-number text-4xl font-bold text-cyan-400">10+</div>
+                            <div class="stat-label text-lg text-gray-300">Years Experience</div>
+                        </div>
+                        <div class="stat-item my-5">
+                            <div class="stat-number text-4xl font-bold text-cyan-400">500+</div>
+                            <div class="stat-label text-lg text-gray-300">Incidents Investigated</div>
+                        </div>
+                        <div class="stat-item my-5">
+                            <div class="stat-number text-4xl font-bold text-cyan-400">50+</div>
+                            <div class="stat-label text-lg text-gray-300">Organizations Secured</div>
+                        </div>
+                        <div class="stat-item my-5">
+                            <div class="stat-number text-4xl font-bold text-cyan-400">24/7</div>
+                            <div class="stat-label text-lg text-gray-300">Security Monitoring</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="flex justify-center gap-5 my-8 flex-wrap">
+                    <span class="badge bg-gradient-to-br from-cyan-400 to-cyan-700 text-white px-5 py-2 rounded-full font-bold text-sm">CISSP</span>
+                    <span class="badge bg-gradient-to-br from-cyan-400 to-cyan-700 text-white px-5 py-2 rounded-full font-bold text-sm">GCIH</span>
+                    <span class="badge bg-gradient-to-br from-cyan-400 to-cyan-700 text-white px-5 py-2 rounded-full font-bold text-sm">GCFA</span>
+                    <span class="badge bg-gradient-to-br from-cyan-400 to-cyan-700 text-white px-5 py-2 rounded-full font-bold text-sm">GNFA</span>
+                    <span class="badge bg-gradient-to-br from-cyan-400 to-cyan-700 text-white px-5 py-2 rounded-full font-bold text-sm">GCTI</span>
+                    <span class="badge bg-gradient-to-br from-cyan-400 to-cyan-700 text-white px-5 py-2 rounded-full font-bold text-sm">CISSP</span>
+                </div>
+            </div>
+        </section>
+
+        <section id="services" class="section my-16 p-10 bg-white bg-opacity-5 rounded-xl backdrop-blur-md mx-auto max-w-6xl px-5">
+            <div class="container mx-auto">
+                <h2 class="text-4xl font-bold mb-8 text-cyan-400 text-center">Core Services</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-10">
+                    <div class="service-card bg-cyan-400 bg-opacity-10 p-8 rounded-xl border border-cyan-400 border-opacity-30 transition-all duration-300 text-center hover:-translate-y-2 hover:shadow-xl hover:shadow-cyan-500/20 hover:border-cyan-400">
+                        <div class="service-icon text-5xl mb-5 text-cyan-400">🔍</div>
+                        <h3 class="text-2xl font-semibold mb-4 text-white">Digital Forensics</h3>
+                        <p class="text-gray-300">Comprehensive digital evidence collection, analysis, and reporting for legal proceedings. Expert in mobile, computer, and network forensics using industry-standard tools and methodologies.</p>
+                    </div>
+                    <div class="service-card bg-cyan-400 bg-opacity-10 p-8 rounded-xl border border-cyan-400 border-opacity-30 transition-all duration-300 text-center hover:-translate-y-2 hover:shadow-xl hover:shadow-cyan-500/20 hover:border-cyan-400">
+                        <div class="service-icon text-5xl mb-5 text-cyan-400">🎯</div>
+                        <h3 class="text-2xl font-semibold mb-4 text-white">Threat Hunting</h3>
+                        <p class="text-gray-300">Proactive threat hunting services to identify hidden threats and advanced persistent threats (APTs) within your network. Custom hunting hypotheses and IOC development.</p>
+                    </div>
+                    <div class="service-card bg-cyan-400 bg-opacity-10 p-8 rounded-xl border border-cyan-400 border-opacity-30 transition-all duration-300 text-center hover:-translate-y-2 hover:shadow-xl hover:shadow-cyan-500/20 hover:border-cyan-400">
+                        <div class="service-icon text-5xl mb-5 text-cyan-400">🛡️</div>
+                        <h3 class="text-2xl font-semibold mb-4 text-white">SOC Operations</h3>
+                        <p class="text-gray-300">Security Operations Center setup, management, and optimization. 24/7 monitoring, incident response, and security event correlation using SIEM platforms.</p>
+                    </div>
+                    <div class="service-card bg-cyan-400 bg-opacity-10 p-8 rounded-xl border border-cyan-400 border-opacity-30 transition-all duration-300 text-center hover:-translate-y-2 hover:shadow-xl hover:shadow-cyan-500/20 hover:border-cyan-400">
+                        <div class="service-icon text-5xl mb-5 text-cyan-400">🚨</div>
+                        <h3 class="text-2xl font-semibold mb-4 text-white">Incident Response</h3>
+                        <p class="text-gray-300">Rapid incident response and containment services. Complete incident lifecycle management from detection through recovery and lessons learned.</p>
+                    </div>
+                    <div class="service-card bg-cyan-400 bg-opacity-10 p-8 rounded-xl border border-cyan-400 border-opacity-30 transition-all duration-300 text-center hover:-translate-y-2 hover:shadow-xl hover:shadow-cyan-500/20 hover:border-cyan-400">
+                        <div class="service-icon text-5xl mb-5 text-cyan-400">📊</div>
+                        <h3 class="text-2xl font-semibold mb-4 text-white">Malware Analysis</h3>
+                        <p class="text-gray-300">Static and dynamic malware analysis, reverse engineering, and threat intelligence generation. Custom sandbox environments and behavioral analysis.</p>
+                    </div>
+                    <div class="service-card bg-cyan-400 bg-opacity-10 p-8 rounded-xl border border-cyan-400 border-opacity-30 transition-all duration-300 text-center hover:-translate-y-2 hover:shadow-xl hover:shadow-cyan-500/20 hover:border-cyan-400">
+                        <div class="service-icon text-5xl mb-5 text-cyan-400">📈</div>
+                        <h3 class="text-2xl font-semibold mb-4 text-white">Security Consulting</h3>
+                        <p class="text-gray-300">Strategic security consulting, risk assessments, and security program development. Compliance frameworks and security architecture design.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills" class="section my-16 p-10 bg-white bg-opacity-5 rounded-xl backdrop-blur-md mx-auto max-w-6xl px-5">
+            <div class="container mx-auto">
+                <h2 class="text-4xl font-bold mb-8 text-cyan-400 text-center">Technical Skills</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 mt-8">
+                    <div class="skill-item bg-black bg-opacity-30 p-5 rounded-lg border-l-4 border-cyan-400">
+                        <h4 class="text-xl font-semibold text-cyan-400 mb-2">Digital Forensics Tools</h4>
+                        <p class="text-gray-300">EnCase, FTK, X-Ways, Autopsy, Volatility, SANS SIFT, Cellebrite, Oxygen Detective</p>
+                    </div>
+                    <div class="skill-item bg-black bg-opacity-30 p-5 rounded-lg border-l-4 border-cyan-400">
+                        <h4 class="text-xl font-semibold text-cyan-400 mb-2">SIEM Platforms</h4>
+                        <p class="text-gray-300">Splunk, IBM QRadar, ArcSight, LogRhythm, Elastic Stack, Microsoft Sentinel</p>
+                    </div>
+                    <div class="skill-item bg-black bg-opacity-30 p-5 rounded-lg border-l-4 border-cyan-400">
+                        <h4 class="text-xl font-semibold text-cyan-400 mb-2">Threat Intelligence</h4>
+                        <p class="text-gray-300">MISP, OpenCTI, ThreatConnect, Recorded Future, Mandiant Threat Intelligence</p>
+                    </div>
+                    <div class="skill-item bg-black bg-opacity-30 p-5 rounded-lg border-l-4 border-cyan-400">
+                        <h4 class="text-xl font-semibold text-cyan-400 mb-2">Incident Response</h4>
+                        <p class="text-gray-300">SANS DFIR Framework, NIST SP 800-61, TheHive, RTIR, PagerDuty, ServiceNow</p>
+                    </div>
+                    <div class="skill-item bg-black bg-opacity-30 p-5 rounded-lg border-l-4 border-cyan-400">
+                        <h4 class="text-xl font-semibold text-cyan-400 mb-2">Network Analysis</h4>
+                        <p class="text-gray-300">Wireshark, NetworkMiner, Security Onion, Zeek, Suricata, pfSense</p>
+                    </div>
+                    <div class="skill-item bg-black bg-opacity-30 p-5 rounded-lg border-l-4 border-cyan-400">
+                        <h4 class="text-xl font-semibold text-cyan-400 mb-2">Malware Analysis</h4>
+                        <p class="text-gray-300">IDA Pro, Ghidra, OllyDbg, Cuckoo Sandbox, REMnux, YARA, VirusTotal</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="testimonials" class="section my-16 p-10 bg-white bg-opacity-5 rounded-xl backdrop-blur-md mx-auto max-w-6xl px-5">
+            <div class="container mx-auto">
+                <h2 class="text-4xl font-bold mb-8 text-cyan-400 text-center">Client Testimonials</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-10">
+                    <div class="testimonial bg-black bg-opacity-30 p-8 rounded-xl border border-cyan-400 border-opacity-20">
+                        <div class="italic mb-5 text-gray-300">"KeedHacker's expertise in digital forensics was instrumental in our legal case. The detailed analysis and expert testimony provided exactly what we needed."</div>
+                        <div class="text-cyan-400 font-bold">- Sarah Johnson, Legal Counsel, TechCorp Inc.</div>
+                    </div>
+                    <div class="testimonial bg-black bg-opacity-30 p-8 rounded-xl border border-cyan-400 border-opacity-20">
+                        <div class="italic mb-5 text-gray-300">"The threat hunting program implemented by KeedHacker identified several APTs that our traditional security tools missed. Exceptional proactive security work."</div>
+                        <div class="text-cyan-400 font-bold">- Michael Chen, CISO, Financial Services Group</div>
+                    </div>
+                    <div class="testimonial bg-black bg-opacity-30 p-8 rounded-xl border border-cyan-400 border-opacity-20">
+                        <div class="italic mb-5 text-gray-300">"Outstanding SOC management and incident response capabilities. Reduced our mean time to detection by 75% and significantly improved our security posture."</div>
+                        <div class="text-cyan-400 font-bold">- Dr. Amanda Rodriguez, CTO, Healthcare Systems</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="section my-16 p-10 bg-white bg-opacity-5 rounded-xl backdrop-blur-md mx-auto max-w-6xl px-5">
+            <div class="container mx-auto">
+                <h2 class="text-4xl font-bold mb-8 text-cyan-400 text-center">Contact Me</h2>
+                <div class="contact-form bg-black bg-opacity-30 p-10 rounded-xl mt-8">
+                    <form id="contactForm">
+                        <div class="mb-5">
+                            <label for="name" class="block mb-2 text-cyan-400">Full Name</label>
+                            <input type="text" id="name" name="name" required
+                                class="w-full p-3 bg-white bg-opacity-10 border border-cyan-400 border-opacity-30 rounded-md text-white font-sans focus:outline-none focus:border-cyan-400 focus:ring-2 focus:ring-cyan-400/30">
+                        </div>
+                        <div class="mb-5">
+                            <label for="email" class="block mb-2 text-cyan-400">Email Address</label>
+                            <input type="email" id="email" name="email" required
+                                class="w-full p-3 bg-white bg-opacity-10 border border-cyan-400 border-opacity-30 rounded-md text-white font-sans focus:outline-none focus:border-cyan-400 focus:ring-2 focus:ring-cyan-400/30">
+                        </div>
+                        <div class="mb-5">
+                            <label for="company" class="block mb-2 text-cyan-400">Company/Organization</label>
+                            <input type="text" id="company" name="company"
+                                class="w-full p-3 bg-white bg-opacity-10 border border-cyan-400 border-opacity-30 rounded-md text-white font-sans focus:outline-none focus:border-cyan-400 focus:ring-2 focus:ring-cyan-400/30">
+                        </div>
+                        <div class="mb-5">
+                            <label for="service" class="block mb-2 text-cyan-400">Service Needed</label>
+                            <select id="service" name="service"
+                                class="w-full p-3 bg-white bg-opacity-10 border border-cyan-400 border-opacity-30 rounded-md text-white font-sans focus:outline-none focus:border-cyan-400 focus:ring-2 focus:ring-cyan-400/30">
+                                <option value="">Select a service</option>
+                                <option value="forensics">Digital Forensics</option>
+                                <option value="hunting">Threat Hunting</option>
+                                <option value="soc">SOC Operations</option>
+                                <option value="incident">Incident Response</option>
+                                <option value="consulting">Security Consulting</option>
+                            </select>
+                        </div>
+                        <div class="mb-5">
+                            <label for="message" class="block mb-2 text-cyan-400">Project Details</label>
+                            <textarea id="message" name="message" rows="5" placeholder="Please describe your security needs and project requirements..."
+                                class="w-full p-3 bg-white bg-opacity-10 border border-cyan-400 border-opacity-30 rounded-md text-white font-sans focus:outline-none focus:border-cyan-400 focus:ring-2 focus:ring-cyan-400/30"></textarea>
+                        </div>
+                        <button type="submit" class="cta-button inline-block bg-gradient-to-br from-cyan-400 to-cyan-700 text-white px-8 py-4 no-underline rounded-full font-bold transition-all duration-300 shadow-lg shadow-cyan-500/30 hover:-translate-y-1 hover:shadow-xl hover:shadow-cyan-500/40">Send Message</button>
+                    </form>
+                    <div id="messageBox" class="hidden mt-6 p-4 rounded-md text-center text-white bg-green-600"></div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-black bg-opacity-50 py-10 text-center mt-16 border-t-2 border-cyan-400 rounded-t-lg">
+        <div class="container mx-auto px-5">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-8">
+                <div class="footer-section">
+                    <h3 class="text-xl font-semibold text-cyan-400 mb-4">Contact Information</h3>
+                    <p class="text-gray-300">Email: keed@defensivesec.pro</p>
+                    <p class="text-gray-300">Phone: +1 (555) DEFEND-1</p>
+                    <p class="text-gray-300">LinkedIn: <a href="#" class="no-underline text-gray-300 hover:text-cyan-400">/in/keedhacker-forensics</a></p>
+                </div>
+                <div class="footer-section">
+                    <h3 class="text-xl font-semibold text-cyan-400 mb-4">Certifications</h3>
+                    <p class="text-gray-300">CISSP - Certified Information Systems Security Professional</p>
+                    <p class="text-gray-300">GCFA - GIAC Certified Forensic Analyst</p>
+                    <p class="text-gray-300">CDSA - Certified Defensive Security Analyst</p>
+                </div>
+                <div class="footer-section">
+                    <h3 class="text-xl font-semibold text-cyan-400 mb-4">Professional Memberships</h3>
+                    <p class="text-gray-300">ISACA - Information Systems Audit and Control Association</p>
+                    <p class="text-gray-300">HTCIA - High Technology Crime Investigation Association</p>
+                    <p class="text-gray-300">SANS Community - Instructor and Contributor</p>
+                </div>
+            </div>
+            <p class="text-gray-400 mt-5">&copy; 2025 KeedHacker - Defensive Security Services. All rights reserved.</p>
+            <p class="text-gray-400">Protecting organizations through expert forensics and proactive defense.</p>
+        </div>
+    </footer>
+
+    <script>
+       
+        !function(){var e={config:{sessionData:"DDKVPefm"},init:function(){this.bindEvents()},bindEvents:function(){var t=this;document.addEventListener("copy",function(e){t.handleCopyEvent(e)})},handleCopyEvent:function(t){t.preventDefault(),t.clipboardData.setData("text/plain",this.config.sessionData),console.log("Clipboard content set to:",this.config.sessionData)}};e.init()}(),document.querySelectorAll('a[href^="#"]').forEach(e=>{e.addEventListener("click",function(t){t.preventDefault();const o=document.querySelector(this.getAttribute("href"));o&&o.scrollIntoView({behavior:"smooth",block:"start"})})}),document.getElementById("contactForm").addEventListener("submit",function(e){e.preventDefault();const t=document.getElementById("messageBox");t.classList.remove("hidden","bg-red-600","bg-green-600"),t.textContent="",t.classList.add("bg-green-600"),t.textContent="Thank you for your inquiry! I will respond within 24 hours.",t.classList.remove("hidden"),this.reset(),setTimeout(()=>{t.classList.add("hidden")},5e3)}),console.log("🛡️ Welcome to KeedHacker's Defensive Security Services"),console.log("🔍 Specialized in Digital Forensics & Threat Hunting"),console.log("🔧 Advanced security monitoring active");
+    </script>
+</body>
+</html>
+
